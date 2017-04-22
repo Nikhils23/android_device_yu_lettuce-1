@@ -3,7 +3,7 @@ PRODUCT_PACKAGES += \
     calmodule.cfg \
     libcalmodule_common \
     sensors.msm8916 \
-   android.hardware.sensors@1.0-impl
+    android.hardware.sensors@1.0-impl
 
 # Permissions
 PRODUCT_COPY_FILES += \
