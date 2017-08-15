@@ -13,6 +13,3 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.camera.cpp.duplication=false \
     persist.camera.hal.debug.mask=0
-
-# Prebuilt
-include device/yu/lettuce/prebuilt-cam/prebuilt-cam.mk
