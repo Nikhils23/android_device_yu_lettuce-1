@@ -1,6 +1,5 @@
 #
-# Copyright (C) 2011-2016 The CyanogenMod Project
-#           (C) 2017 The LineageOS Project
+# Copyright (C) 2016 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,11 +17,8 @@
 # Inherit from msm8916-common
 $(call inherit-product, device/cyanogen/msm8916-common/msm8916.mk)
 
-# Device specific overlays
+# Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-ifeq ($(BOARD_AOSP_BASED),)
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
-endif
 
 # Include package config fragments
 include $(LOCAL_PATH)/product/*.mk
