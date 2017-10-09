@@ -1,0 +1,5 @@
+#============= untrusted_app ==============
+allow untrusted_app sysfs:file { read getattr open };
+
+#============= untrusted_app_25 ==============
+allow untrusted_app_25 sysfs:file { read getattr open };

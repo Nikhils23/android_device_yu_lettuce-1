@@ -1,0 +1,21 @@
+#============= init ==============
+allow init debugfs:file write;
+allow init diag_device:chr_file { write ioctl };
+allow init modem_efs_partition_device:blk_file write;
+allow init netd:unix_stream_socket connectto;
+allow init netd_socket:sock_file write;
+allow init property_socket:sock_file write;
+allow init qmuxd_socket:sock_file write;
+allow init rpmb_device:blk_file write;
+allow init rtc_device:chr_file ioctl;
+allow init self:capability2 block_suspend;
+allow init self:netlink_route_socket { read nlmsg_read };
+allow init self:socket { read bind create write ioctl };
+allow init self:udp_socket ioctl;
+allow init smd_device:chr_file write;
+allow init ssd_device:blk_file write;
+allow init system_file:file execute_no_trans;
+allow init tee_device:chr_file { write ioctl };
+allow init uio_device:chr_file write;
+allow init vfat:file { getattr open };
+allow init wcnss_device:chr_file write;
