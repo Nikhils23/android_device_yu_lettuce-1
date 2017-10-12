@@ -1,2 +1,5 @@
 #============= rild ==============
 allow rild servicemanager:binder call;
+
+#============= radio ==============
+allow radio qmuxd_socket:dir search;

@@ -22,3 +22,4 @@ allow init cameraserver:fd use;
 allow init gpu_device:chr_file { write ioctl };
 allow init ion_device:chr_file write;
 allow init video_device:chr_file { write ioctl };
+allow init servicemanager:binder call;
