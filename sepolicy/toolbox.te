@@ -1,0 +1,8 @@
+#============= toolbox ==============
+allow toolbox init:fifo_file { write read };
+allow toolbox init:netlink_route_socket { read write };
+allow toolbox init:netlink_socket { read write };
+allow toolbox init:unix_stream_socket { read write };
+allow toolbox init:fifo_file getattr;
+allow toolbox init:unix_stream_socket connectto;
+allow toolbox property_socket:sock_file write;

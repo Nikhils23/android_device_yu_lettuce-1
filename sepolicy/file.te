@@ -1,1 +1,3 @@
 type touchpanel_sysfs, fs_type, sysfs_type;
+type wcnss_sysfs, sysfs_type, fs_type;
+allow kernel wcnss_sysfs:file { rw_file_perms };
